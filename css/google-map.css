@@ -1,0 +1,29 @@
+/*==================  GOOGLE MAP  ======================*/
+.map {
+  position: relative;
+}
+.map_model {
+  height: 553px;
+}
+.map_model img {
+  max-width: none !important;
+}
+@media (max-width: 767px) {
+  .map_model {
+    height: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .map_model {
+    height: 350px;
+  }
+}
+.map_model .gmnoprint {
+  display: none !important;
+}
+.map_model .gmnoprint .gm-style-mtc {
+  display: none !important;
+}
+.map_locations {
+  display: none;
+}
