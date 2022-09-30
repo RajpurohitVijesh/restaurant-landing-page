@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/booking.css">
+    <link rel="stylesheet" href="css/fl-chapps.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/google-map.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+
+    <!--[if lt IE 9]>
+    <html class="lt-ie9">
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+            <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+                 alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+        </a>
+    </div>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src='js/device.min.js'></script>
+</head>
+<body>
+<div class="page">
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    <header>
+        <div class="header_cnt">
+            <div class="container center">
+                <div class="brand">
+                    <h1 class="brand_name">
+                        <a href="./">goldfish</a>
+                    </h1>
+
+                    <p class="brand_slogan">
+                        excellent seafood
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="camera_container">
+            <div class="square"></div>
+            <div class="square2"></div>
+            <div class="cam_cnt1">
+                <div class="cam_cnt">
+                    <h3>Reservations</h3>
+
+                    <form id="bookingForm" class="booking-form">
+                        <div class="tmInput fl-chapps-user139">
+                            <input name="Name" placeHolder="Full name" type="text"
+                                   data-constraints='@NotEmpty @Required @AlphaSpecial'>
+                        </div>
+                        <div class="cntr">
+                            <div class="col">
+                                <div class="tmInput fl-chapps-pen55">
+                                    <input name="Guests" placeHolder="# of Guests" type="text"
+                                           data-constraints='@NotEmpty @Required @JustNumbers'>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <label class="tmDatepicker fl-chapps-weekly10">
+                                    <input type="text" name="Date" placeHolder='Date'
+                                           data-constraints="@NotEmpty @Required @Date">
+                                </label>
+                            </div>
+                            <div class="col">
+                                <select name="Time fl-chapps-weekly10" class="tmSelect manual"
+                                        data-constraints="@NotEmpty @Required">
+                                    <option>Time</option>
+                                    <option>9:00</option>
+                                    <option>12:00</option>
+                                    <option>15:00</option>
+                                    <option>18:00</option>
+                                    <option>21:00</option>
+                                </select>
+                            </div>
+                        </div>
+                        <a href="#" class="btn" data-type="submit">Reserve now!</a>
+                    </form>
+                </div>
+                <img src="images/bg2.png" alt=""/>
+            </div>
+            <div id="camera" class="camera_wrap">
+                <div data-src="images/page-1_slide1.jpg">
+                    <div class="camera_caption fadeIn">
+                    </div>
+                </div>
+                <div data-src="images/page-1_slide2.jpg">
+                    <div class="camera_caption fadeIn">
+
+                    </div>
+                </div>
+                <div data-src="images/page-1_slide3.jpg">
+                    <div class="camera_caption fadeIn">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--========================================================
+                              CONTENT
+    =========================================================-->
+    <main>
+        <section class="well center">
+            <div class="container">
+                <h2>welcome message</h2>
+
+                <h6>Beciegast nveriti vitaesaert asety kertya aset aplicaboserde nerorem miuyas keryas <br/>
+                    asipsumod itaut. Monsequntur magni dolores eonqui ratione voluptate msequise kertyias nesciunt,
+                    neque porro quisquam serinuyfasas. Vertyu erauas aitaesa ertyasneo eniptaiades delortyas
+                    miaseolernatur aut oditaut.
+                    Donsequuntur magni dolores eo qui ratione voluptate.</h6>
+                <img src="images/page-1_img01.png" alt=""/>
+            </div>
+        </section>
+        <section class="well1 bg-secondary2">
+            <div class="container">
+                <h2 class="center">our philosophy</h2>
+                <ul class="index-list row">
+                    <li class="grid_4 wow fadeInUp">
+                        <h5>Heras deoreas frtaetale
+                            resrertas erta mio</h5>
+
+                        <p>Astyus scrat styseya sertaskeras
+                            oriosam, nisieas aliqaset aplicabab.
+                            <br/>Duis autem cea commodi coquses
+                            easasvel eum muyt.</p>
+                    </li>
+                    <li class="grid_4 wow fadeInUp" data-wow-delay="0.2s">
+                        <h5>Vertyas misas reasetale
+                            miseas lesrerta</h5>
+
+                        <p>Nertaskes ertyus scrat setysertya
+                            aset aplicababoriosam, nisieas aliqui
+                            cea commodi coqus. <br/> Duis autem
+                            vel eum muyteasas.</p>
+                    </li>
+                    <li class="grid_4 wow fadeInUp" data-wow-delay="0.4s">
+                        <h5>reasetale Vertyas doloer
+                            keryrase seruyas</h5>
+
+                        <p>Beytaskes ertyus scrat setysertya
+                            aset aplicababoriosam, nisieas aliqui
+                            cea commodi coqus. <br/> Duis autem
+                            vel eum muyteasas.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="well2 bg-img">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_4 preffix_8">
+                        <h3 class="media_off_left"><span>perfect</span>experience & high
+                            quality services</h3>
+
+                        <p class="media_off_left"><strong>Beytaskes ertyus scrat setysertya
+                            aset aplicababoriosam, nisieas aliqui
+                            cea commodi coqus. Duis autem
+                            vel eum muyteasasiure reprehe
+                            nderit, qui in ea voluptate.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="center well2__ins">
+            <div class="container">
+                <h2 class="center">photo gallery</h2>
+            </div>
+            <ul class="inline-list">
+                <li><a class="thumb" href="images/page-1_img02_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img02.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img03_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img03.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img04_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img04.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img05_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img05.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img06_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img06.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+                <li><a class="thumb" href="images/page-1_img07_original.jpg" data-fancybox-group="1">
+                    <img src="images/page-1_img07.jpg" alt=""/>
+
+                    <div class="thumb_overlay">
+                        <div class="thumb_overlay_cnt">
+                            <h4>multras veras</h4>
+
+                            <p>lertyase vtreasa ferodtasas
+                                neruiasas</p>
+                        </div>
+                    </div>
+                </a></li>
+            </ul>
+        </section>
+        <section class="well3">
+            <div class="container">
+                <h2 class="center">news and events</h2>
+
+                <div class="row">
+                    <div class="grid_4 bord ins wow fadeInUp">
+                        <time datetime="2015-01-01">10 december 2014</time>
+                        <p class="mod">feytaseras rastya Nertaskes ertyus
+                            nuertseyas sabor.</p>
+                    </div>
+                    <div class="grid_4 bord ins wow fadeInUp" data-wow-delay="0.4s">
+                        <time datetime="2015-01-01">13 december 2014</time>
+                        <p class="mod">Nertaskes ertyus scrat setysertya
+                            doloertas miugas.</p>
+                    </div>
+                    <div class="grid_4 bord ins wow fadeInUp" data-wow-delay="0.6s">
+                        <time datetime="2015-01-01">18 december 2014</time>
+                        <p class="mod">us scrat setysertya Nertaskes erty
+                            aboruyaset aplicab.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="well4 bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6 wow fadeInLeft">
+                        <img src="images/page-1_img08.jpg" alt=""/>
+                    </div>
+                    <div class="grid_6 wow fadeInRight">
+                        <h3><span>Dish of the day</span>
+                            specialties like grilled
+                            salmon steak</h3>
+
+                        <p class="off">Neyurasas kuytrasar siteruer adipiscing el auris ferment fereas
+                            laoreet aliquam leo. Ut tellus dolorapibus eget, elementum velcurus eleifend, elit. Aenean
+                            auctor wist urnaluam erat volutpat. Duis
+                            ac turpis. Integer rutrum ante eu lacus.</p>
+
+                        <p>Quisque nulla.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--========================================================
+                              FOOTER
+    =========================================================-->
+    <footer>
+        <div class="footer_cnt">
+            <div class="container">
+                <h2 class="center">testimonials</h2>
+
+                <div class="row">
+                    <div class="grid_6 shadow bg-primary wow fadeInLeft">
+                        <blockquote class="box">
+                            <div class="box_aside">
+                                <img src="images/page-1_img09.jpg" alt=""/>
+                            </div>
+                            <div class="box_cnt__no-flow">
+                                <cite>andrea morello</cite>
+                                <q><span>“</span>Beciegast nveriti vitesaert asety kertya aset aplicaboserde nerafaes
+                                    lorem ipsumditaut. Monsequ untire ertyasa voluptate.</q>
+                            </div>
+                        </blockquote>
+                    </div>
+                    <div class="grid_6 shadow bg-primary wow fadeInRight">
+                        <blockquote class="box">
+                            <div class="box_aside">
+                                <img src="images/page-1_img10.jpg" alt=""/>
+                            </div>
+                            <div class="box_cnt__no-flow">
+                                <cite>martin Shepard</cite>
+                                <q><span>“</span>Monsequ untire smagni dolores eonqui ratione fertyasa voluptate.
+                                    msequi nesciunt, neque porrsquam sedolore nuyfasas. </q>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+                <address class="center">28 Jackson Blvd Ste 1020 Chicago <br/>
+                    IL 60604-2340
+                </address>
+                <div class="inline-list2_wrap bord center">
+                    <ul class="inline-list2">
+                        <li><a class="fa-twitter" href="#"></a></li>
+                        <li><a class="fa-facebook-f" href="#"></a></li>
+                        <li><a class="fa-google-plus" href="#"></a></li>
+                        <li><a class="fa-rss" href="#"></a></li>
+                        <li><a class="fa-pinterest" href="#"></a></li>
+                        <li><a class="fa-linkedin" href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="copyright center">
+                    © <span id="copyright-year"></span> |
+                    All Rights Reserved
+                    <!-- {%FOOTER_LINK} -->
+                </div>
+            </div>
+        </div>
+        <div class="map">
+            <div class="square3"></div>
+            <div id="google-map" class="map_model" data-zoom="13"></div>
+            <ul class="map_locations">
+                <li data-x="-73.9874068" data-y="40.643180">
+                    <p> 9870 St Vincent Place, Glasgow, DC 45 Fr 45. <span>800 2345-6789</span></p>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</div>
+
+<script src="js/script.js"></script>
+
+<!--coded by Morpeh-->
+
+</body>
+</html>
