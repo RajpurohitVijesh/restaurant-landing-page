@@ -59,7 +59,7 @@
                     <h3>Reservations</h3>
 
                     <form id="bookingForm" class="booking-form">
-                        <div class="tmInput fl-chapps-user139">
+                        <div class="tmInput fl-chapps-user139 fullName-padding">
                             <input name="Name" placeHolder="Full name" type="text"
                                    data-constraints='@NotEmpty @Required @AlphaSpecial'>
                         </div>
@@ -77,8 +77,9 @@
                                            data-constraints="@NotEmpty @Required @Date" id="datepicker"> -->
                                 </label>
                             </div>
-                            <div class="col">
-                                <select name="Time fl-chapps-weekly10" class="tmSelect manual"
+                            <div class="col time-col-height">
+
+                                <select name="Time fl-chapps-weekly10" class="tmSelect manual time-height"
                                         data-constraints="@NotEmpty @Required">
                                     <option>Time</option>
                                     <option>9:00</option>

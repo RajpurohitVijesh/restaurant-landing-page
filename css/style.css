@@ -631,3 +631,15 @@ footer .inline-list2_wrap {
 footer .copyright {
   font-size: 16px;
 }
+
+.fullName-padding {
+	padding-bottom: 9px;
+}
+
+.time-col-height {
+	height: 54px;
+}
+
+.time-height {
+	height: 100%;
+}
