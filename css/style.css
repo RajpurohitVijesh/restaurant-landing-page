@@ -642,4 +642,7 @@ footer .copyright {
 
 .time-height {
 	height: 100%;
+	font-size: 15px;
+	font-weight: 600;
+	padding: 10px;
 }
